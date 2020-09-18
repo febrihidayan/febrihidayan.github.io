@@ -20,6 +20,10 @@ export default {
         ]
     },
 
+    router: {
+        base: '/febrihidayan.github.io/'
+    },
+
     components: true,
 
     modules: [
