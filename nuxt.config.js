@@ -20,8 +20,8 @@ export default {
         ]
     },
 
-    router: {
-        base: '/febrihidayan.github.io/'
+    env: {
+        appName: 'Febri Hidayan'
     },
 
     components: true,
