@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar">
+    <nav class="navbar has-shadow">
         <div class="container">
             <div class="navbar-brand">
                 <NuxtLink to="/" class="navbar-item">Febri Hidayan</NuxtLink>
@@ -11,7 +11,7 @@
             </div>
             <div class="navbar-menu" id="navbarBasicExample">
                 <div class="navbar-start">
-                    <NuxtLink to="/">Blog</NuxtLink>
+                    <NuxtLink to="blog" class="navbar-item is-tab">Blog</NuxtLink>
                 </div>
             </div>
         </div>
