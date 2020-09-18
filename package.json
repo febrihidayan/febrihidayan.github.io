@@ -1,0 +1,23 @@
+{
+  "name": "febrihidayan",
+  "version": "1.0.0",
+  "description": "Situs Febri Hidayan",
+  "author": {
+    "name": "Febri Hidayan",
+    "email": "febrihidayan20@gmail.com",
+    "url": "https://febrihidayan.github.io"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxt/components": "^1.1.0",
+    "@nuxt/content": "^1.9.0",
+    "bulma": "^0.9.0",
+    "nuxt": "^2.14.5"
+  }
+}
