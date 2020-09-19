@@ -1,19 +1,40 @@
 <template>
-    <nav class="navbar has-shadow">
+    <section class="section">
         <div class="container">
-            <div class="navbar-brand">
-                <NuxtLink to="/" class="navbar-item">Febri Hidayan</NuxtLink>
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div class="navbar-menu" id="navbarBasicExample">
-                <div class="navbar-start">
-                    <NuxtLink to="blog" class="navbar-item is-tab">Blog</NuxtLink>
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <NuxtLink
+                        to="/"
+                        class="navbar-item is-tab">
+                        <strong>Febri Hidayan</strong>
+                    </NuxtLink>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
                 </div>
-            </div>
+                <div class="navbar-menu" id="navbarBasicExample">
+                    <div class="navbar-end">
+                        <NuxtLink
+                            :to="{
+                                name: 'blog'
+                            }"
+                            class="navbar-item is-tab"
+                        >
+                            Blog
+                        </NuxtLink>
+                        <NuxtLink
+                            :to="{
+                                name: 'packages'
+                            }"
+                            class="navbar-item is-tab"
+                        >
+                            Packages
+                        </NuxtLink>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </section>
 </template>

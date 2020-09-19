@@ -9,7 +9,7 @@ export default {
             {
                 hid: 'description',
                 name: 'description',
-                content: process.env.npm_package_description
+                content: "Mengenali lebih jauh tentang saya lewat situs ini dan belajar lebih banyak pengetahuan disini."
             }
         ],
         link: [
@@ -22,6 +22,12 @@ export default {
 
     env: {
         appName: 'Febri Hidayan'
+    },
+
+    // https://id.nuxtjs.org/guides/configuration-glossary/configuration-router
+    router: {
+        // linkActiveClass: 'is-active',
+        linkExactActiveClass: 'is-active'
     },
 
     components: true,
