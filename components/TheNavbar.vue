@@ -8,13 +8,23 @@
                         class="navbar-item is-tab">
                         <strong>Febri Hidayan</strong>
                     </NuxtLink>
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <a
+                        @click="isActive = !isActive"
+                        role="button"
+                        :class="[`navbar-burger burger`, {
+                            'is-active': isActive
+                        }]"
+                        aria-label="menu"
+                        aria-expanded="false"
+                    >
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <div class="navbar-menu" id="navbarBasicExample">
+                <div :class="[`navbar-menu`, {
+                    'is-active': isActive
+                }]">
                     <div class="navbar-end">
                         <NuxtLink
                             :to="{
@@ -38,3 +48,11 @@
         </div>
     </section>
 </template>
+
+<script>
+export default {
+    data: () => ({
+        isActive: false
+    })
+}
+</script>
