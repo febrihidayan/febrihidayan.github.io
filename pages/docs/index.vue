@@ -25,7 +25,6 @@ export default {
 
     async asyncData({ $content }) {
         const data = await $content('docs').fetch()
-        console.log(data)
 
         return {
             data
