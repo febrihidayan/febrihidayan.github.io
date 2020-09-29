@@ -3,7 +3,7 @@
         <div v-for="(item, index) in data" :key="index" class="column is-4">
             <NuxtLink
                 :to="{
-                    name: 'packages-slug',
+                    name: 'docs-slug',
                     params: {
                         slug: item.slug
                     }
