@@ -28,19 +28,19 @@
                     <div class="navbar-end">
                         <NuxtLink
                             :to="{
+                                name: 'docs'
+                            }"
+                            class="navbar-item is-tab"
+                        >
+                            Docs
+                        </NuxtLink>
+                        <NuxtLink
+                            :to="{
                                 name: 'blog'
                             }"
                             class="navbar-item is-tab"
                         >
                             Blog
-                        </NuxtLink>
-                        <NuxtLink
-                            :to="{
-                                name: 'packages'
-                            }"
-                            class="navbar-item is-tab"
-                        >
-                            Packages
                         </NuxtLink>
                     </div>
                 </div>
