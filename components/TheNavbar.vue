@@ -42,6 +42,14 @@
                         >
                             Blog
                         </NuxtLink>
+                        <NuxtLink
+                            :to="{
+                                name: 'story'
+                            }"
+                            class="navbar-item is-tab"
+                        >
+                            Story
+                        </NuxtLink>
                     </div>
                 </div>
             </nav>

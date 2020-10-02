@@ -4,9 +4,6 @@
             <article class="content">
                 <h1 class="title">{{ page.title }}</h1>
                 <p>{{ page.description }}</p>
-                <div class="tags">
-                    <span v-for="(item, index) in page.tags" :key="index" class="tag">{{ item }}</span>
-                </div>
                 <hr>
                 <NuxtContent :document="page" />
             </article>
