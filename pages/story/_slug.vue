@@ -2,10 +2,10 @@
     <div class="columns is-centered">
         <div class="column is-8">
             <article class="content">
-                <h1 class="title">{{ page.title }}</h1>
-                <p>{{ page.description }}</p>
+                <h1 class="title">{{ post.title }}</h1>
+                <p>{{ post.description }}</p>
                 <hr>
-                <NuxtContent :document="page" />
+                <NuxtContent :document="post" />
             </article>
         </div>
     </div>
@@ -15,7 +15,7 @@
 export default {
 
     head() {
-        const title = this.page.title
+        const title = this.post.title
         return {
             title,
             titleTemplate: `%s - ${process.env.appName}`,
@@ -60,10 +60,10 @@ export default {
     },
 
     async asyncData({ $content, route }) {
-        const page = await $content(route.fullPath).fetch()
+        const post = await $content(route.fullPath).fetch()
 
         return {
-            page
+            post
         }
     }
 
