@@ -24,7 +24,7 @@
 export default {
 
     async asyncData({ $content }) {
-        const data = await $content('docs').fetch()
+        const data = await $content('blog').fetch()
 
         return {
             data
