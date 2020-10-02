@@ -15,8 +15,47 @@
 export default {
 
     head() {
+        const title = this.page.title
         return {
-            title: this.page.title + ' - ' + process.env.appName
+            title,
+            titleTemplate: `%s - ${process.env.appName}`,
+            meta: [
+                {
+                    hid: 'robots',
+                    name: 'robots',
+                    content: 'all,allow,follow',
+                },
+                {
+                    hid: 'title',
+                    name: 'title',
+                    content: title,
+                },
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.post.description
+                },
+                {
+                    hid: 'og:title',
+                    name: 'og:title',
+                    content: title
+                },
+                {
+                    hid: 'og:description',
+                    name: 'og:description',
+                    content: this.post.description
+                },
+                {
+                    hid: 'twitter:title',
+                    name: 'twitter:title',
+                    content: title
+                },
+                {
+                    hid: 'twitter:description',
+                    name: 'twitter:description',
+                    content: this.post.description
+                },
+            ]
         }
     },
 
