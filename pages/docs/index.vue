@@ -1,14 +1,7 @@
 <template>
     <div class="columns is-centered is-multiline">
         <div v-for="(item, index) in data" :key="index" class="column is-4">
-            <NuxtLink
-                :to="{
-                    name: 'docs-slug',
-                    params: {
-                        slug: item.slug
-                    }
-                }"
-            >
+            <NuxtLink :to="item._path">
                 <div class="card">
                     <div class="card-content has-text-centered">
                         <h1 class="title is-4">{{ item.title }}</h1>
@@ -20,18 +13,14 @@
     </div>
 </template>
 
-<script>
-export default {
+<script setup>
+const data = await queryContent('docs').find()
 
-    async asyncData({ $content }) {
-        const data = await $content('docs').fetch()
-
-        return {
-            data
-        }
+useHead({
+    titleTemplate: (title) => {
+        return title ? `Docs - ${title}` : title;
     }
-
-}
+})
 </script>
 
 <style scoped>

@@ -1,5 +1,5 @@
 #logs
-debug.log
+*.log*
 
 # Dependency directories
 node_modules/
@@ -9,4 +9,9 @@ node_modules/
 
 # Nuxt generate
 .nuxt
+.nitro
+.cache
+.output
+.data
+.env
 dist

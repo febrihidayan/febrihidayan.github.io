@@ -1,11 +1,9 @@
 <template>
-    <div>
-        <TheNavbar />
-        <section class="section">
-            <div class="container">
-                <nuxt />
-            </div>
-        </section>
-        <TheFooter />
-    </div>
+    <TheNavbar />
+    <section class="section">
+        <div class="container">
+            <NuxtPage />
+        </div>
+    </section>
+    <TheFooter />
 </template>
