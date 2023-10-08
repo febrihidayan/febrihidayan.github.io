@@ -26,5 +26,5 @@ As a Software Engineer in several projects, my job is to design, develop, and ma
  had the opportunity to attend a backend engineer bootcamp at ruangguru through the independent campus program. the program focused on golang developers who discussed the basics of programming to learning golang itself. i also learned to create projects with microservice-based teams for the needs of the front end developer team.
 
 Transcript
-- [https://drive.google.com/file/d/19HhQL6TWKoq14yafqWUnITC6BiLfNYHp/view](Sertificate)
-- [https://drive.google.com/file/d/1lYAt8IlvesJzxpUxPQk3p2AObPEjNZKM/view](Transcripts)
+- [Sertificate](https://drive.google.com/file/d/19HhQL6TWKoq14yafqWUnITC6BiLfNYHp/view)
+- [Transcripts](https://drive.google.com/file/d/1lYAt8IlvesJzxpUxPQk3p2AObPEjNZKM/view)
