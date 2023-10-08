@@ -1,6 +1,6 @@
 <template>
     <div class="columns is-centered is-multiline">
-        <div v-for="(item, index) in data" :key="index" class="column is-4">
+        <div v-for="(item, index) in data" :key="index" class="column is-half">
             <NuxtLink :to="item._path">
                 <div class="card">
                     <div class="card-content has-text-centered">

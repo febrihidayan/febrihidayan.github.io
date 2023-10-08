@@ -1,14 +1,10 @@
 <template>
-    <div class="columns is-centered">
-        <div class="column is-8">
-            <article class="content">
-                <h1 class="title">{{ data.title }}</h1>
-                <p>{{ data.description }}</p>
-                <hr>
-                <NuxtContent :document="data" />
-            </article>
-        </div>
-    </div>
+    <article class="content">
+        <h1 class="title">{{ data.title }}</h1>
+        <p>{{ data.description }}</p>
+        <hr>
+        <ContentRenderer :value="data" />
+    </article>
 </template>
 
 <script setup>

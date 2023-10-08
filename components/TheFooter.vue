@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>&copy;2020 Febri Hidayan</p>
+            <p>&copy;{{ new Date().getFullYear() }} Febri Hidayan</p>
         </div>
     </footer>
 </template>
